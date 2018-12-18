@@ -25,23 +25,29 @@ void loop()
             break;
         case 'B':
             //vibrate right one-handed
-            digitalWrite(D1, HIGH); // LED anschalten
+            digitalWrite(D3, HIGH); // LED anschalten
             delay(500);
-            digitalWrite(D1, LOW); // LED ausschalten
+            digitalWrite(D3, LOW); // LED ausschalten
             delay(500);
-            digitalWrite(D1, HIGH); // LED anschalten
+            digitalWrite(D3, HIGH); // LED anschalten
             delay(500);
-            digitalWrite(D1, LOW); // LED ausschalten
+            digitalWrite(D3, LOW); // LED ausschalten
+            delay(500);
+            digitalWrite(D3, HIGH); // LED anschalten
+            delay(500);
+            digitalWrite(D3, LOW); // LED ausschalten
             break;
         case 'N':
             //vibrate left two-handed
             digitalWrite(D3, HIGH); // LED anschalten
             delay(500);
             digitalWrite(D3, LOW); // LED ausschalten
+            break;
         case 'M':
             //vibrate right two-handed
             digitalWrite(D1, HIGH); // LED anschalten
             delay(500);
             digitalWrite(D1, LOW); // LED ausschalten
+            break;
     }
 }
