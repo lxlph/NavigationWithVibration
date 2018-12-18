@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class TurnTriggerScript : MonoBehaviour
 {
-    public string targetName;
+    public GameObject targetCollider;
+    private string targetName;
     private GameObject userGameObject;
     private string lastTouchedGameobject = "";
     private bool triggerAlreadyPassed;
+    public enum Direction { Left, Right, StraightForward}
+    public Direction directionForTarget;
 
     public void Start()
     {
+        targetName = targetCollider.name;
         userGameObject = GameObject.Find("User");
         //set vibration method 
         int vibrationMethodNumber = userGameObject.GetComponent<UserDataScript>().getVibrationMethod();
@@ -75,12 +79,39 @@ public class TurnTriggerScript : MonoBehaviour
         {
             logText = ("Straight Forward");
         }
-        else if (goName == "DCollider (Target)")
+        else if (goName == targetName)
         {
-            logText = ("TargetStart");
+
+            logText = getDirectionForTargetAction();
         }
         //Debug.Log(logText);
         userGameObject.GetComponent<UserDataScript>().setDisplayTurnText(logText);
     }
+
+    public string getDirectionForTargetAction()
+    {
+        string logText = "";
+        if(directionForTarget == Direction.Left)
+        {
+            logText = ("Turn Left");
+            targetName = "SCollider";
+            gameObject.GetComponent<TurnTriggerToArduinoScript>().vibrateLeft();
+        }
+        else if (directionForTarget == Direction.Right)
+        {
+            logText = ("Turn Right");
+            targetName = "WCollider";
+            gameObject.GetComponent<TurnTriggerToArduinoScript>().vibrateRight();
+        }
+        else
+        {
+            targetName = "ACollider";
+            logText = ("Straight Forward");
+        }
+        return logText;
+        
+    }
+
+
 
 }
