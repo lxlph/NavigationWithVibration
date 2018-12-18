@@ -9,25 +9,39 @@ void setup()
 
 void loop()
 {
-    // Print a heartbeat
-    if (millis() > last_time + 2000)
-    {
-        Serial.println("Arduino is dead!!");
-        last_time = millis();
-    }
-
-    // Send some message when I receive an 'A' or a 'Z'.
+    // Send some message when I receive an letter
     switch (Serial.read())
     {
-        case 'A':
-            Serial.println("That's the first letter of the abecedarium.");
+        case 'V':
+            //vibrate left one-handed
+            //Serial.println("That's the first letter of the abecedarium.");
             digitalWrite(D3, HIGH); // LED anschalten
-            digitalWrite(D1, HIGH); // LED anschalten
-            break;
-        case 'Z':
+            delay(500);
             digitalWrite(D3, LOW); // LED ausschalten
-            digitalWrite(D1, LOW); // LED ausschalten
-            Serial.println("That's the last letter of the abecedarium.");
+            delay(500);
+            digitalWrite(D3, HIGH); // LED anschalten
+            delay(500);
+            digitalWrite(D3, LOW); // LED ausschalten
             break;
+        case 'B':
+            //vibrate right one-handed
+            digitalWrite(D1, HIGH); // LED anschalten
+            delay(500);
+            digitalWrite(D1, LOW); // LED ausschalten
+            delay(500);
+            digitalWrite(D1, HIGH); // LED anschalten
+            delay(500);
+            digitalWrite(D1, LOW); // LED ausschalten
+            break;
+        case 'N':
+            //vibrate left two-handed
+            digitalWrite(D3, HIGH); // LED anschalten
+            delay(500);
+            digitalWrite(D3, LOW); // LED ausschalten
+        case 'M':
+            //vibrate right two-handed
+            digitalWrite(D1, HIGH); // LED anschalten
+            delay(500);
+            digitalWrite(D1, LOW); // LED ausschalten
     }
 }
