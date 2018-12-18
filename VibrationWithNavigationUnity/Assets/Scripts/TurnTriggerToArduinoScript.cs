@@ -6,15 +6,16 @@ public class TurnTriggerToArduinoScript : MonoBehaviour
 {
 
     public SerialController serialController;
-    [Tooltip("Select Vibration Method: \n" +
-            "1 - One-Handed \n" +
-            "2 - Two-Handed"
-        )]
-    public int vibrationMethodNumber = 1;
+    private int vibrationMethodNumber = 1;
 
     void Start()
     {
         serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
+    }
+
+    public void setVibrationMethod(int number)
+    {
+        vibrationMethodNumber = number;
     }
 
     public void vibrateLeft()

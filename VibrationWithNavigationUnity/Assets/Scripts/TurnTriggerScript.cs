@@ -5,10 +5,17 @@ using UnityEngine;
 public class TurnTriggerScript : MonoBehaviour
 {
     public string targetName;
-    public GameObject userGameObject;
+    private GameObject userGameObject;
     private string lastTouchedGameobject = "";
     private bool triggerAlreadyPassed;
 
+    public void Start()
+    {
+        userGameObject = GameObject.Find("User");
+        //set vibration method 
+        int vibrationMethodNumber = userGameObject.GetComponent<UserDataScript>().getVibrationMethod();
+        gameObject.GetComponent<TurnTriggerToArduinoScript>().setVibrationMethod(vibrationMethodNumber);
+    }
 
     public void collideAction(string goCollided)
     {

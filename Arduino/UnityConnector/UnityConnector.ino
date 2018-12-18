@@ -3,8 +3,8 @@ unsigned long last_time = 0;
 void setup()
 {
     Serial.begin(9600);
-    pinMode(D3, OUTPUT); //orange
-    pinMode(D1, OUTPUT);  //braun
+    pinMode(D3, OUTPUT); //orange, links
+    pinMode(D1, OUTPUT);  //braun, rechts
 }
 
 void loop()
