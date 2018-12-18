@@ -28,6 +28,7 @@ public class TurnTriggerScript : MonoBehaviour
         {
             checkTurn(goCollided);
             setLastTouchedGameobject("");
+            userGameObject.GetComponent<UserDataScript>().setDisplayTurnText("");
         }
     }
 
@@ -59,24 +60,27 @@ public class TurnTriggerScript : MonoBehaviour
 
     public void vibrateDirection(string goName)
     {
+        string logText = "";
         if (goName == "SCollider")
         {
-            Debug.Log("Turn Right");
+            logText = ("Turn Right");
             gameObject.GetComponent<TurnTriggerToArduinoScript>().vibrateRight();
         }
         else if (goName == "WCollider")
         {
-            Debug.Log("Turn Left");
+            logText = ("Turn Left");
             gameObject.GetComponent<TurnTriggerToArduinoScript>().vibrateLeft();
         }
         else if (goName == "ACollider")
         {
-            Debug.Log("Straight Forward");
+            logText = ("Straight Forward");
         }
         else if (goName == "DCollider (Target)")
         {
-            Debug.Log("Wrong");
+            logText = ("TargetStart");
         }
+        //Debug.Log(logText);
+        userGameObject.GetComponent<UserDataScript>().setDisplayTurnText(logText);
     }
 
 }

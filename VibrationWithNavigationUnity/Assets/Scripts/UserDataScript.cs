@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class UserDataScript : MonoBehaviour
 {
-    public int wrongTurns;
-    public int correctTurns;    
     public GameObject wrongTurnsNumberText;
     public GameObject correctTurnsNumberText;
+    public GameObject displayTurnText;
+    public bool displayTurnActivated = true;
     [Tooltip("Select Vibration Method: \n" +
         "1 - One-Handed \n" +
         "2 - Two-Handed"
     )]
     public int vibrationMethod = 1;
+    private int wrongTurns;
+    private int correctTurns;    
 
     public void addWrongTurn()
     {
@@ -29,5 +31,13 @@ public class UserDataScript : MonoBehaviour
     public int getVibrationMethod()
     {
         return vibrationMethod;
+    }
+
+    public void setDisplayTurnText(string text)
+    {
+        if (displayTurnActivated)
+        {
+            displayTurnText.GetComponent<UnityEngine.UI.Text>().text = text;
+        }
     }
 }
