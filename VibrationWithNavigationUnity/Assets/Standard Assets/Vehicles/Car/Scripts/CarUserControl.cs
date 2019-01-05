@@ -24,14 +24,7 @@ namespace UnityStandardAssets.Vehicles.Car
             float v = CrossPlatformInputManager.GetAxis("Vertical");
             float handbrake = 0;
 
-
             bool test = Input.GetButton("Gas");
-            if (test)
-            {
-                Debug.Log("Get Key Working");
-            }
-
-            Debug.Log(v);
 
             if (v > 0)
             {
