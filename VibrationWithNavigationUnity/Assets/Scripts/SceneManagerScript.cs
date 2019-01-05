@@ -32,7 +32,6 @@ public class SceneManagerScript : MonoBehaviour
         {
             arrChosenRandScene = arrRandSceneB;
         }
-        currentSceneIndex = 6;
         SceneManager.LoadScene(arrChosenRandScene[currentSceneIndex]);
     }
 
