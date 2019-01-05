@@ -8,4 +8,31 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 5bfdc10ba250f0146a593ad30210a942
+  - enabled: 1
+    path: Assets/Scenes/Map1S1_apple.unity
+    guid: b960be9387174664b81d4465d6d4e35e
+  - enabled: 1
+    path: Assets/Scenes/Map1S1_proto.unity
+    guid: d6f6c3c805a1ebd408407e58ad8a9440
+  - enabled: 1
+    path: Assets/Scenes/Map1S2_apple.unity
+    guid: 90e0c33c5d2ad704bbcecc8d840cfad3
+  - enabled: 1
+    path: Assets/Scenes/Map1S2_proto.unity
+    guid: 6f568d3162382e34582e7aac26f38dbb
+  - enabled: 1
+    path: Assets/Scenes/Map2S1_apple.unity
+    guid: a901b3fd87025154e9e6d85e5204b4ba
+  - enabled: 1
+    path: Assets/Scenes/Map2S1_proto.unity
+    guid: a7bab08fce538384f84e092c7d650f24
+  - enabled: 1
+    path: Assets/Scenes/Map2S2_apple.unity
+    guid: 568c6aa2256641640b45a03eef07fe81
+  - enabled: 1
+    path: Assets/Scenes/Map2S2_proto.unity
+    guid: 0cfaeeedb7d33e14ea5562e3542433b2
   m_configObjects: {}

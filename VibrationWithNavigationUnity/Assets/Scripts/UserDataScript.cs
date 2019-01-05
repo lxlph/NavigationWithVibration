@@ -9,6 +9,8 @@ public class UserDataScript : MonoBehaviour
     public GameObject displayTurnText;
     public GameObject finishplane;
     public bool displayTurnActivated = true;
+    public GameObject sceneManager;
+
     [Tooltip("Select Vibration Method: \n" +
         "1 - One-Handed \n" +
         "2 - Two-Handed"
