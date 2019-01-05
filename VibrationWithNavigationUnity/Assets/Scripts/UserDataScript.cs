@@ -7,6 +7,7 @@ public class UserDataScript : MonoBehaviour
     public GameObject wrongTurnsNumberText;
     public GameObject correctTurnsNumberText;
     public GameObject displayTurnText;
+    public GameObject finishplane;
     public bool displayTurnActivated = true;
     [Tooltip("Select Vibration Method: \n" +
         "1 - One-Handed \n" +
@@ -39,5 +40,10 @@ public class UserDataScript : MonoBehaviour
         {
             displayTurnText.GetComponent<UnityEngine.UI.Text>().text = text;
         }
+    }
+
+    public void showFinishMessage()
+    {
+        finishplane.SetActive(true);
     }
 }
