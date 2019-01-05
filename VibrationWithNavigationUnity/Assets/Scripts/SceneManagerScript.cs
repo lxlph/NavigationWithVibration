@@ -14,6 +14,7 @@ public class SceneManagerScript : MonoBehaviour
     "Map1S1_apple", "Map2S1_proto", "Map1S2_proto",  "Map2S2_apple"};
 
     public string[] arrChosenRandScene;
+    public int currentSceneIndex = 0;
 
     void Awake()
     {
@@ -23,7 +24,7 @@ public class SceneManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Random.Range(0, 1) == 0)
+        if (Random.Range(0, 2) == 0)
         {
             arrChosenRandScene = arrRandSceneA;
         }
@@ -31,12 +32,18 @@ public class SceneManagerScript : MonoBehaviour
         {
             arrChosenRandScene = arrRandSceneB;
         }
-        SceneManager.LoadScene(arrChosenRandScene[0]);
+        currentSceneIndex = 6;
+        SceneManager.LoadScene(arrChosenRandScene[currentSceneIndex]);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void nextScene()
     {
-        
+        if (currentSceneIndex + 1 == arrChosenRandScene.Length)
+        {
+            Debug.Log("Quit");
+            Application.Quit();
+        }
+        currentSceneIndex++;
+        SceneManager.LoadScene(arrChosenRandScene[currentSceneIndex]);
     }
 }
