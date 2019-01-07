@@ -19,11 +19,6 @@ public class SceneManagerScript : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
         if (Random.Range(0, 2) == 0)
         {
             arrChosenRandScene = arrRandSceneA;
@@ -32,8 +27,15 @@ public class SceneManagerScript : MonoBehaviour
         {
             arrChosenRandScene = arrRandSceneB;
         }
-        SceneManager.LoadScene(arrChosenRandScene[currentSceneIndex]);
     }
+
+    public void startSimulation()
+    {
+        SceneManager.LoadScene(arrChosenRandScene[currentSceneIndex]);
+        string sceneName = arrChosenRandScene[currentSceneIndex];
+        gameObject.GetComponent<SceneManagerWriteCSV>().setSceneName(sceneName);
+    }
+
 
     public void NextScene()
     {
