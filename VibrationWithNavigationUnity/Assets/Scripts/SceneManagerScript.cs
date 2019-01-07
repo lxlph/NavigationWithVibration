@@ -35,7 +35,7 @@ public class SceneManagerScript : MonoBehaviour
         SceneManager.LoadScene(arrChosenRandScene[currentSceneIndex]);
     }
 
-    public void nextScene()
+    public void NextScene()
     {
         if (currentSceneIndex + 1 == arrChosenRandScene.Length)
         {
@@ -43,6 +43,8 @@ public class SceneManagerScript : MonoBehaviour
             Application.Quit();
         }
         currentSceneIndex++;
-        SceneManager.LoadScene(arrChosenRandScene[currentSceneIndex]);
+        string sceneName = arrChosenRandScene[currentSceneIndex];
+        SceneManager.LoadScene(sceneName);
+        gameObject.GetComponent<SceneManagerWriteCSV>().setSceneName(sceneName);
     }
 }
