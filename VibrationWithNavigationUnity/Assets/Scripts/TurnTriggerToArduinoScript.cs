@@ -5,12 +5,12 @@ using UnityEngine;
 public class TurnTriggerToArduinoScript : MonoBehaviour
 {
 
-    public SerialController serialController;
+    //public SerialController serialController;
     private int vibrationMethodNumber = 1;
 
     void Start()
     {
-        serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
+        //serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
     }
 
     public void setVibrationMethod(int number)
@@ -44,21 +44,21 @@ public class TurnTriggerToArduinoScript : MonoBehaviour
 
     private void vibrateLeft_onehanded()
     {
-        serialController.SendSerialMessage("V");
+        //serialController.SendSerialMessage("V");
     }
 
     private void vibrateRight_onehanded()
     {
-        serialController.SendSerialMessage("B");
+        //serialController.SendSerialMessage("B");
     }
 
     private void vibrateLeft_twohanded()
     {
-        serialController.SendSerialMessage("N");
+        //serialController.SendSerialMessage("N");
     }
 
     private void vibrateRight_twohanded()
     {
-        serialController.SendSerialMessage("M");
+        //serialController.SendSerialMessage("M");
     }
 }
