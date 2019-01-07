@@ -22,6 +22,7 @@ public class UserDataScript : MonoBehaviour
     public void Start()
     {
         sceneManager = GameObject.Find("SceneManager");
+        sceneManager.GetComponent<SceneManagerWriteCSV>().ResetData(gameObject);
     }
     public void addWrongTurn()
     {
@@ -50,6 +51,7 @@ public class UserDataScript : MonoBehaviour
 
     public void showFinishMessage()
     {
+        sceneManager.GetComponent<SceneManagerWriteCSV>().GetData(gameObject);
         finishplane.SetActive(true);
         sceneFinished = true;
     }
@@ -58,7 +60,27 @@ public class UserDataScript : MonoBehaviour
     {
         if (Input.GetKeyDown("space") && sceneFinished)
         {
-            sceneManager.GetComponent<SceneManagerScript>().nextScene();
+            sceneManager.GetComponent<SceneManagerScript>().NextScene();
         }
+    }
+
+    public int getWrongTurns()
+    {
+        return wrongTurns;
+    }
+
+    public int getCorrectTurns()
+    {
+        return correctTurns;
+    }
+
+    public void resetWrongTurns()
+    {
+        wrongTurns = 0;
+    }
+
+    public void resetCorrectTurns()
+    {
+        correctTurns = 0;
     }
 }

@@ -1012,11 +1012,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0560fe9194a48a54ab1fc94f1a0eb609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vibrationMethod: 2
   wrongTurnsNumberText: {fileID: 3101934343677358864}
   correctTurnsNumberText: {fileID: 3101934344363868317}
   displayTurnText: {fileID: 3101934343282622105}
+  finishplane: {fileID: 0}
+  sceneManager: {fileID: 0}
   displayTurnActivated: 1
-  vibrationMethod: 2
 --- !u!1 &2968780846127885738
 GameObject:
   m_ObjectHideFlags: 0
@@ -7589,6 +7591,10 @@ PrefabInstance:
     - target: {fileID: 128384, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: m_Name
       value: SerialController
+      objectReference: {fileID: 0}
+    - target: {fileID: 128384, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 405068, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: m_LocalPosition.x
