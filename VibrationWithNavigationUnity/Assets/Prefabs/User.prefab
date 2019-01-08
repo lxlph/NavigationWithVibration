@@ -458,7 +458,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 3}
-  skidParticles: {fileID: 0}
 --- !u!1 &2968780846127885730
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,7 +630,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 3}
-  skidParticles: {fileID: 0}
 --- !u!1 &2968780846127885732
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,7 +802,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 3}
-  skidParticles: {fileID: 0}
 --- !u!1 &2968780846127885734
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +974,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 3}
-  skidParticles: {fileID: 0}
 --- !u!1 &2968780846127885736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,7 +1102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0560fe9194a48a54ab1fc94f1a0eb609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vibrationMethod: 1
+  vibrationMethod: 2
   wrongTurnsNumberText: {fileID: 3101934343677358864}
   correctTurnsNumberText: {fileID: 3101934344363868317}
   displayTurnText: {fileID: 3101934343282622105}
