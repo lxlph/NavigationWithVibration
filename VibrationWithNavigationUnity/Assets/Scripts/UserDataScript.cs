@@ -51,9 +51,9 @@ public class UserDataScript : MonoBehaviour
 
     public void showFinishMessage()
     {
-        sceneManager.GetComponent<SceneManagerWriteCSV>().GetData(gameObject);
         finishplane.SetActive(true);
         sceneFinished = true;
+        sceneManager.GetComponent<SceneManagerWriteCSV>().GetData(gameObject);
     }
 
     public void Update()
