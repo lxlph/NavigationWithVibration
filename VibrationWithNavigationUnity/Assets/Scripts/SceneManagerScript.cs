@@ -31,9 +31,7 @@ public class SceneManagerScript : MonoBehaviour
 
     public void startSimulation()
     {
-        //linhtest
-        //SceneManager.LoadScene(arrChosenRandScene[currentSceneIndex]);
-        SceneManager.LoadScene("Map1.2");
+        SceneManager.LoadScene(arrChosenRandScene[currentSceneIndex]);
         string sceneName = arrChosenRandScene[currentSceneIndex];
         gameObject.GetComponent<SceneManagerWriteCSV>().setSceneName(sceneName);
     }
