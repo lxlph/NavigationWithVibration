@@ -199,7 +199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2968780845427479536
 Transform:
   m_ObjectHideFlags: 0
@@ -1106,7 +1106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0560fe9194a48a54ab1fc94f1a0eb609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vibrationMethod: 2
+  vibrationMethod: 1
   wrongTurnsNumberText: {fileID: 3101934343677358864}
   correctTurnsNumberText: {fileID: 3101934344363868317}
   displayTurnText: {fileID: 3101934343282622105}
@@ -7693,7 +7693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4599428578701451750
 Transform:
   m_ObjectHideFlags: 0

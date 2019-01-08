@@ -15,6 +15,7 @@ public class SceneManagerScript : MonoBehaviour
 
     public string[] arrChosenRandScene;
     public int currentSceneIndex = 0;
+    public bool vrOn = false;
 
     void Awake()
     {
@@ -26,6 +27,10 @@ public class SceneManagerScript : MonoBehaviour
         else
         {
             arrChosenRandScene = arrRandSceneB;
+        }
+        if (vrOn)
+        {
+            startSimulation();
         }
     }
 

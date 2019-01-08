@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class SceneManagerWriteCSV : MonoBehaviour
 {
     public InputField InputField;
+    public string userIdString;
     public string timerText;
     public int wrongTurns;
     public int correctTurns;
@@ -14,7 +15,15 @@ public class SceneManagerWriteCSV : MonoBehaviour
 
     public void GetData(GameObject userDataGo)
     {
-        string userId = InputField.text;
+        if (gameObject.GetComponent<SceneManagerScript>().vrOn)
+        {
+            string userId = userIdString;
+        }
+        else
+        {
+            string userId = InputField.text;
+        }
+        
         string mapName = sceneName.Substring(0, 4);
         string routeName = sceneName.Substring(4, 2);
         string methodName = sceneName.Substring(7, 5);
