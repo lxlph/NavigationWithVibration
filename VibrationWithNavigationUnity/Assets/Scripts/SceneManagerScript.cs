@@ -15,7 +15,7 @@ public class SceneManagerScript : MonoBehaviour
 
     public string[] arrChosenRandScene;
     public int currentSceneIndex = 0;
-    public bool vrOn = false;
+    public bool VR_on;
 
     void Awake()
     {
@@ -28,7 +28,7 @@ public class SceneManagerScript : MonoBehaviour
         {
             arrChosenRandScene = arrRandSceneB;
         }
-        if (vrOn)
+        if (VR_on)
         {
             startSimulation();
         }
@@ -46,7 +46,7 @@ public class SceneManagerScript : MonoBehaviour
     {
         if (currentSceneIndex + 1 == arrChosenRandScene.Length)
         {
-            Debug.Log("Quit");
+            Debug.Log("Quit sim");
             Application.Quit();
         }
         currentSceneIndex++;
