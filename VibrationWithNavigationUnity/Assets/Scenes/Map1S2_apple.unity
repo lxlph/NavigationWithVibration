@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: d83e5e98eabe7d14b8248910f83f31df, type: 3}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.22571328, b: 0.30692166, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -38303,10 +38303,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: User
       objectReference: {fileID: 0}
-    - target: {fileID: 1616603131, guid: eafe7c209274e734c933c3ea2c8e9919, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2968780846127395280, guid: eafe7c209274e734c933c3ea2c8e9919,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38362,14 +38358,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3101934342610991823, guid: eafe7c209274e734c933c3ea2c8e9919,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2968780846127885743, guid: eafe7c209274e734c933c3ea2c8e9919,
         type: 3}
       propertyPath: finishplane
       value: 
       objectReference: {fileID: 1616603131}
-    - target: {fileID: 3101934342610991823, guid: eafe7c209274e734c933c3ea2c8e9919,
+    - target: {fileID: 2968780846127885743, guid: eafe7c209274e734c933c3ea2c8e9919,
         type: 3}
-      propertyPath: m_LocalPosition.z
+      propertyPath: vibrationMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616603131, guid: eafe7c209274e734c933c3ea2c8e9919, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1616603133, guid: eafe7c209274e734c933c3ea2c8e9919, type: 3}
