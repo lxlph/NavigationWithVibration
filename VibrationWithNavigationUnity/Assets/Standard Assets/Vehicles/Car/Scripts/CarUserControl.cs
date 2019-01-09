@@ -28,8 +28,6 @@ namespace UnityStandardAssets.Vehicles.Car
             float bremse = Input.GetAxisRaw("Bremse")*-1;
 
 
-            Debug.Log(bremse);
-
             
                 m_Car.Move(h, gas, bremse, handbrake);
             

@@ -1,8 +1,26 @@
 Userid, Map, Strecke, Methode, Zeit, falsch abgebogen, richtig abgebogen
 
-UserA,Map1,S1,proto,00h:01m:31s,0,10
-UserA,Map2,S1,apple,00h:02m:07s,0,12
-UserA,Map1,S2,apple,00h:03m:39s,0,10
-UserA,Map1,S1,proto,00h:01m:15s,0,10
-UserA,Map1,S2,proto,00h:02m:40s,0,10
-UserA,Map2,S2,apple,00h:03m:03s,0,10
+UserA,Map1,S1,proto,00h:01m:20s,0,10
+UserA,Map2,S1,apple,00h:01m:49s,0,12
+UserA,Map1,S1,apple,00h:01m:31s,0,10
+UserA,Map2,S1,proto,00h:05m:22s,1,14
+
+UserB,Map1,S1,apple,00h:00m:56s,2,2
+UserB,Map2,S1,proto,00h:01m:34s,1,11
+UserB,Map1,S1,proto,00h:01m:22s,0,10
+UserB,Map2,S1,apple,00h:01m:24s,0,12
+
+UserC,Map1,S1,apple,00h:02m:27s,1,9
+UserC,Map2,S1,proto,00h:01m:37s,1,11
+UserC,Map1,S1,proto,00h:01m:26s,0,10
+UserC,Map2,S1,apple,00h:01m:49s,1,11
+
+UserD,Map1,S1,proto,00h:01m:18s,0,10
+UserD,Map2,S1,apple,00h:01m:25s,1,11
+UserD,Map1,S1,apple,00h:01m:14s,0,10
+UserD,Map2,S1,proto,00h:00m:58s,0,12
+
+UserE,Map1,S1,apple,00h:02m:17s,1,10
+UserE,Map2,S1,proto,00h:01m:30s,0,12
+UserE,Map1,S1,proto,00h:01m:20s,0,10
+UserE,Map2,S1,apple,00h:02m:01s,1,11

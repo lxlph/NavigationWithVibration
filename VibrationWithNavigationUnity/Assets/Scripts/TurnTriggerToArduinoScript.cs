@@ -55,7 +55,7 @@ public class TurnTriggerToArduinoScript : MonoBehaviour
 
     private void vibrateRight_onehanded()
     {
-        rightLight.GetComponent<LightScript>().blinkRight_onehanded();
+        leftLight.GetComponent<LightScript>().blinkRight_onehanded();
 
         //serialController.SendSerialMessage("B");
     }

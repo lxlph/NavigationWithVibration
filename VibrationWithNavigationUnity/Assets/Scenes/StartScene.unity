@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrChosenRandScene: []
-  currentSceneIndex: 1
+  currentSceneIndex: 0
   VR_on: 1
 --- !u!114 &1200664235
 MonoBehaviour:
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputField: {fileID: 286360867}
-  userIdString: UserA
+  userIdString: UserE
   timerText: 
   wrongTurns: 0
   correctTurns: 0
